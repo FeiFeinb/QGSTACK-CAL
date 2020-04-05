@@ -3,13 +3,15 @@ bool Calculator::isCorrect()
 {
 	//std::stack<char> k;
 	QGSTACK<char> k;
-	if (infix.front() == '*' || infix.front() == '/' || infix.back() == '*' || infix.back() == '/')
+	if (infix.front() == '*' || infix.front() == '/' || IsOperator(infix.back()))
 		return false;
 	for (int i = 0; i < infix.size(); i++)
 	{
 		if (infix[i] == '/' && infix[i + 1] == '0')
 			return false;
 		if ((!IsOperand(infix[i])) && (!IsOperator(infix[i])) && (!Isfrontk(infix[i])) && (!Isbackk(infix[i])))
+			return false;
+		if (IsOperator(infix[i]) && IsOperator(infix[i - 1]) && IsOperator(infix[i + 1]))
 			return false;
 		if (infix[i] == '(') //À¨ºÅÅÐ¶Ï
 			k.push(infix[i]);

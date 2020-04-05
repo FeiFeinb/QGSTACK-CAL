@@ -52,7 +52,7 @@ void iloveqg() {
 	while (true) {
 		system("cls");
 		std::string typeselect;
-		std::cout << "请输入int，string，double，float,calculator,数组栈的默认容量为100" << std::endl;
+		std::cout << "请输入int，string，double，float,cal,数组栈的默认容量为100" << std::endl;
 		std::cin >> typeselect;
 		if (typeselect == "int") {
 			QGARRSTACK<int> qgarr;
@@ -70,9 +70,9 @@ void iloveqg() {
 			QGARRSTACK<float> qgarr;
 			while (hiqg(qgarr)) {};
 		}
-		else if (typeselect == "calculator") {
+		else if (typeselect == "cal") {
 			std::string math;
-			std::cout << "请输入计算式" << std::endl;
+			std::cout << "请输入表达式" << std::endl;
 			std::cin >> math;
 			Calculator cal(math);
 			if (cal.isCorrect())
