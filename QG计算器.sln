@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QG计算器", "QG计算器\QG计算器.vcxproj", "{42CB4315-9B9F-4E73-841E-86EB6FAD33B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42CB4315-9B9F-4E73-841E-86EB6FAD33B5}.Debug|x64.ActiveCfg = Debug|x64
+		{42CB4315-9B9F-4E73-841E-86EB6FAD33B5}.Debug|x64.Build.0 = Debug|x64
+		{42CB4315-9B9F-4E73-841E-86EB6FAD33B5}.Debug|x86.ActiveCfg = Debug|Win32
+		{42CB4315-9B9F-4E73-841E-86EB6FAD33B5}.Debug|x86.Build.0 = Debug|Win32
+		{42CB4315-9B9F-4E73-841E-86EB6FAD33B5}.Release|x64.ActiveCfg = Release|x64
+		{42CB4315-9B9F-4E73-841E-86EB6FAD33B5}.Release|x64.Build.0 = Release|x64
+		{42CB4315-9B9F-4E73-841E-86EB6FAD33B5}.Release|x86.ActiveCfg = Release|Win32
+		{42CB4315-9B9F-4E73-841E-86EB6FAD33B5}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5312645D-E510-4155-A1F7-5DE34686109D}
+	EndGlobalSection
+EndGlobal
