@@ -52,19 +52,9 @@ void Calculator::turnBackfix()
 		{
 			while (chars.top() != '(') //栈顶不为 ( ，且栈不为空
 			{
-				if (chars.empty()) //栈为空 （保护措施）
-				{
-					std::cout << "error" << std::endl;  //输出“error”
-					return;
-				}
 				backfix += ' ';
 				backfix += chars.top();
 				chars.pop();
-				if (chars.empty()) //栈为空 （保护措施）
-				{
-					std::cout << "error" << std::endl;
-					return;
-				}
 			}
 			chars.pop();
 		}
@@ -177,5 +167,5 @@ void Calculator::getResult()
 		else
 			temp += backfix[i];
 	}
-	std::cout << f.top() << std::endl;
+	std::cout << "结果为" << f.top() << std::endl;
 }
